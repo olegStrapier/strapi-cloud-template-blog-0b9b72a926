@@ -14,6 +14,9 @@ module.exports = [
       formLimit: "2gb", // modify form body
       jsonLimit: "2gb", // modify JSON body
       textLimit: "2gb", // modify text body
+      formidable: {
+        maxFileSize: 2 * 1024 * 1024 * 1024, // multipart data, modify here limit of uploaded file size
+      },
     },
   },
 ];
